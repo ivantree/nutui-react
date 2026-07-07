@@ -1,3 +1,35 @@
+# v3.1.0
+
+`2026-07-07`
+
+- :bug: fix: 解决taro版本demo变量文件重复注入导致超时的问题 (#3484)
+
+# v3.1.0-beta.2
+
+`2026-06-08`
+
+- 🏡 chore: 增加4x官网入口
+- :bug: fix: 移除jmfe桥接方式 (#3478)
+
+# v3.1.0-beta.1
+
+`2026-05-26`
+
+- :sparkles: feat: 等比适配 (#3463)
+
+# v3.0.20
+
+`2026-05-20`
+
+- :sparkles: feat: enhance SafeArea with className/style props and constant() iOS fallback (#3388)
+- :sparkles: feat(language): 添加越南语语言包 (#3378)
+- :bug: fix: 修改多语言
+- :bug: fix: 修订demo
+- 🏡 chore(deps): update dependency jest to v30 (#3288)
+- 🏡 chore(deps): update commitlint monorepo to v20 (#3428)
+- 🏡 chore(deps): update actions/github-script action to v9 (#3432)
+- 🔨 build: 添加postinstall脚本以收集使用统计信息 (#3436)
+
 # v3.0.19
 
 `2026-03-06`

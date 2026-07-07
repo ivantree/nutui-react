@@ -30,7 +30,7 @@
   }
 
   &-primary {
-    background: $tag-primary-background-color;
+    background: #fa2c19;
   }
 
   &-info {
@@ -78,6 +78,11 @@
   &-plain {
     background-color: #fff;
     border: $tag-border-width solid $color-title;
+  }
+
+  &-close-icon {
+    width: $icon-size-8;
+    height: $icon-size-8;
   }
 }
 

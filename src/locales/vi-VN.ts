@@ -7,9 +7,15 @@ const viVN: BaseLang = {
   done: 'Hoàn thành',
   noData: 'Tạm thời không có dữ liệu',
   placeholder: 'Vui lòng nhập nội dung',
+  select: 'Vui lòng chọn',
   edit: 'Chỉnh sửa',
   reset: 'Đặt lại',
-  select: 'Vui lòng chọn',
+  close: 'Đóng',
+  back: 'Quay lại',
+  clear: 'Xóa',
+  image: {
+    errorTip: 'Tải ảnh không thành công',
+  },
   video: {
     errorTip: 'Tải video không thành công',
     clickRetry: 'Nhấn để thử lại',
@@ -40,6 +46,24 @@ const viVN: BaseLang = {
     today: 'Hôm nay',
     loadPreviousMonth: 'Tải dữ liệu của tháng trước',
     noEarlierMonth: 'Không có tháng nào sớm hơn',
+    dayAriaLabel: (
+      year: number,
+      month: number,
+      day: number,
+      today: boolean,
+      isActive: boolean,
+      isDisable: boolean
+    ) => {
+      const dateStr = `${year}-${month}-${day}`
+      let label = today ? `Hôm nay, ${dateStr}` : dateStr
+      if (isActive) {
+        label = `Đã chọn ${label}`
+      }
+      if (isDisable) {
+        label = `${label} bị vô hiệu`
+      }
+      return label
+    },
   },
   shortpassword: {
     title: 'Vui lòng nhập mật khẩu',
@@ -60,7 +84,7 @@ const viVN: BaseLang = {
     day: 'Ngày',
     hour: 'Giờ',
     minute: 'Phút',
-    second: '',
+    second: 'Giây',
   },
   address: {
     selectRegion: 'Vui lòng chọn khu vực',
@@ -139,6 +163,10 @@ const viVN: BaseLang = {
   },
   watermark: {
     errorCanvasTips: 'Môi trường hiện tại không hỗ trợ Canvas',
+  },
+  mask: 'Lớp phủ',
+  quickenter: {
+    title: 'Truy cập nhanh',
   },
 }
 export default viVN
